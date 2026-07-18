@@ -52,7 +52,10 @@ jobs:
                si ninguno existente encaja.
 
             2) DIAGNÓSTICO: publica UN comentario en el issue (en ESPAÑOL) con
-               `gh issue comment ${{ github.event.issue.number }} --body "..."` con este formato:
+               `gh issue comment ${{ github.event.issue.number }} --body "..."`. El comentario
+               debe estar escrito en formato Markdown válido y bien interpretable por GitHub
+               (encabezados, negritas, listas y bloques de código con la sintaxis de GitHub
+               Flavored Markdown), siguiendo esta estructura:
 
                ## 🔍 Diagnóstico automático
                **Resumen:** ...
